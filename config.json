@@ -55,8 +55,18 @@
         "enterprise": 5
       }
     },
-        {
+    {
       "name": "Linux Mint",
+      "values": {
+        "stability": 4,
+        "uptodate": 2,
+        "beginner": 5.01,
+        "terminal": 1,
+        "enterprise": 1
+      }
+    },
+    {
+      "name": "Zorin OS",
       "values": {
         "stability": 4,
         "uptodate": 2,
@@ -71,7 +81,7 @@
       "values": {
         "stability": 2,
         "uptodate": 5,
-        "beginner": 1,
+        "beginner": 0.8,
         "terminal": 5,
         "enterprise": 1
       }
