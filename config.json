@@ -1,0 +1,111 @@
+{
+  "meta": {
+    "title": "Linux-Distro-O-Mat",
+    "description": "Finde die Linux-Distribution, die am besten zu dir passt.",
+    "scale_min": 1,
+    "scale_max": 5
+  },
+
+  "questions": [
+    {
+      "id": "stability",
+      "text": "Wie wichtig ist dir Stabilität?",
+      "weight": 1.0
+    },
+    {
+      "id": "uptodate",
+      "text": "Wie wichtig sind aktuelle Pakete?",
+      "weight": 1.0
+    },
+    {
+      "id": "beginner",
+      "text": "Wie wichtig ist Einsteigerfreundlichkeit?",
+      "weight": 1.5
+    },
+    {
+      "id": "terminal",
+      "text": "Wie sehr bevorzugst du Terminal-Nutzung?",
+      "weight": 1.0
+    },
+    {
+    "id": "enterprise",
+    "text": "Wie wichtig ist dir eine mögliche Enterprise-Unterstützung?",
+    "weight": 1.0
+    }
+  ],
+
+  "options": [
+    {
+      "name": "Debian",
+      "values": {
+        "stability": 5,
+        "uptodate": 2,
+        "beginner": 4,
+        "terminal": 3,
+        "enterprise": 1.5
+      }
+    },
+    {
+      "name": "Ubuntu",
+      "values": {
+        "stability": 5,
+        "uptodate": 2,
+        "beginner": 3,
+        "terminal": 2,
+        "enterprise": 5
+      }
+    },
+        {
+      "name": "Linux Mint",
+      "values": {
+        "stability": 4,
+        "uptodate": 2,
+        "beginner": 5,
+        "terminal": 1,
+        "enterprise": 1
+      }
+    },
+
+    {
+      "name": "Arch Linux",
+      "values": {
+        "stability": 2,
+        "uptodate": 5,
+        "beginner": 1,
+        "terminal": 5,
+        "enterprise": 1
+      }
+    },
+        {
+      "name": "Manjaro",
+      "values": {
+        "stability": 2,
+        "uptodate": 5,
+        "beginner": 2,
+        "terminal": 4,
+        "enterprise": 1
+      }
+    },
+
+    {
+      "name": "Fedora/Red Hat",
+      "values": {
+        "stability": 4,
+        "uptodate": 3.5,
+        "beginner": 3,
+        "terminal": 3,
+        "enterprise": 5
+      }
+    },
+    {
+      "name": "openSUSE",
+      "values": {
+        "stability": 4,
+        "uptodate": 3,
+        "beginner": 2.75,
+        "terminal": 2.75,
+        "enterprise": 4
+      }
+    }
+  ]
+}
