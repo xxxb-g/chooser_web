@@ -2,10 +2,10 @@
   "meta": {
     "title": "Linux-Distro-O-Mat",
     "description": "Finde die Linux-Distribution, die am besten zu dir passt.",
+    "introduction": "Du kannst auf der Skala wählen von 1 (unwichtig) zu 5 (wichtig).",
     "scale_min": 1,
     "scale_max": 5
   },
-
   "questions": [
     {
       "id": "stability",
@@ -20,7 +20,7 @@
     {
       "id": "beginner",
       "text": "Wie wichtig ist Einsteigerfreundlichkeit?",
-      "weight": 1.5
+      "weight": 1
     },
     {
       "id": "terminal",
@@ -28,54 +28,22 @@
       "weight": 1.0
     },
     {
-    "id": "enterprise",
-    "text": "Wie wichtig ist dir eine mögliche Enterprise-Unterstützung?",
-    "weight": 1.0
+      "id": "enterprise",
+      "text": "Wie wichtig ist dir eine mögliche Enterprise-Unterstützung?",
+      "weight": 1.0
+    },
+    {
+      "id": "security",
+      "text": "Wie wichtig ist Sicherheit?",
+      "weight": 1.0
+    },
+    {
+      "id": "gaming",
+      "text": "Wie wichtig ist Gaming-Unterstützung?",
+      "weight": 1.0
     }
   ],
-
   "options": [
-    {
-      "name": "Debian",
-      "values": {
-        "stability": 5,
-        "uptodate": 2,
-        "beginner": 4,
-        "terminal": 3,
-        "enterprise": 1.5
-      }
-    },
-    {
-      "name": "Ubuntu",
-      "values": {
-        "stability": 5,
-        "uptodate": 2,
-        "beginner": 3,
-        "terminal": 2,
-        "enterprise": 5
-      }
-    },
-    {
-      "name": "Linux Mint",
-      "values": {
-        "stability": 4,
-        "uptodate": 2,
-        "beginner": 5.01,
-        "terminal": 1,
-        "enterprise": 1
-      }
-    },
-    {
-      "name": "Zorin OS",
-      "values": {
-        "stability": 4,
-        "uptodate": 2,
-        "beginner": 5,
-        "terminal": 1,
-        "enterprise": 1
-      }
-    },
-
     {
       "name": "Arch Linux",
       "values": {
@@ -83,20 +51,23 @@
         "uptodate": 5,
         "beginner": 0.8,
         "terminal": 5,
-        "enterprise": 1
+        "enterprise": 1,
+        "security": 4,
+        "gaming": 3.75
       }
     },
-        {
+    {
       "name": "Manjaro",
       "values": {
         "stability": 2,
         "uptodate": 5,
         "beginner": 2,
         "terminal": 4,
-        "enterprise": 1
+        "enterprise": 1,
+        "security": 4,
+        "gaming": 3
       }
     },
-
     {
       "name": "Fedora/Red Hat",
       "values": {
@@ -104,7 +75,9 @@
         "uptodate": 3.5,
         "beginner": 3,
         "terminal": 3,
-        "enterprise": 5
+        "enterprise": 5,
+        "security": 5,
+        "gaming": 4
       }
     },
     {
@@ -114,7 +87,81 @@
         "uptodate": 3,
         "beginner": 2.75,
         "terminal": 2.75,
-        "enterprise": 4
+        "enterprise": 4,
+        "security": 4,
+        "gaming": 3
+      }
+    },
+    {
+      "name": "Debian",
+      "values": {
+        "stability": 5,
+        "uptodate": 2,
+        "beginner": 3.6,
+        "terminal": 3,
+        "enterprise": 1.5,
+        "security": 5,
+        "gaming": 3
+      }
+    },
+    {
+      "name": "Ubuntu",
+      "values": {
+        "stability": 5,
+        "uptodate": 2,
+        "beginner": 3,
+        "terminal": 2,
+        "enterprise": 5,
+        "security": 4,
+        "gaming": 4
+      }
+    },
+    {
+      "name": "Linux Mint",
+      "values": {
+        "stability": 4,
+        "uptodate": 2,
+        "beginner": 5.01,
+        "terminal": 1,
+        "enterprise": 1,
+        "security": 4,
+        "gaming": 2.75
+      }
+    },
+    {
+      "name": "Zorin OS",
+      "values": {
+        "stability": 4,
+        "uptodate": 2,
+        "beginner": 5,
+        "terminal": 1,
+        "enterprise": 1,
+        "security": 4,
+        "gaming": 3
+      }
+    },
+    {
+      "name": "CentOS",
+      "values": {
+        "stability": 5,
+        "uptodate": 3,
+        "beginner": 2,
+        "terminal": 4,
+        "enterprise": 5,
+        "security": 5,
+        "gaming": 2
+      }
+    },
+    {
+      "name": "CachyOS",
+      "values": {
+        "stability": 4,
+        "uptodate": 4,
+        "beginner": 3,
+        "terminal": 3,
+        "enterprise": 2,
+        "security": 4,
+        "gaming": 5
       }
     }
   ]

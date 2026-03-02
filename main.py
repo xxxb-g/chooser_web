@@ -49,6 +49,7 @@ def main():
     config = load_config()
     print(config["meta"]["title"])
     print(config["meta"]["description"])
+    print(config["meta"]["introduction"])
     print()
 
     answers = ask_questions(config)
